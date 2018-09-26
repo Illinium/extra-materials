@@ -1,0 +1,128 @@
+body {
+  background-image: url('../img/bg2.jpg');
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.dws-wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.dws-wrapper .tab-form {
+  background: #fff;
+  display: none;
+  padding: 30px 20px 20px;
+}
+.dws-wrapper .tab-form.active {
+  display: block!important;
+}
+.dws-wrapper .tab-form .box-input {
+  position: relative;
+}
+.dws-wrapper .tab-form .box-input .input {
+  border: none;
+  border-bottom: 2px solid #e9eaea;
+  padding: 10px 0;
+}
+.dws-wrapper .tab-form .box-input label {
+  position: absolute;
+  top: 10px;
+  transition: .5s;
+}
+.dws-wrapper .tab-form .box-input .input:focus ~ label,
+.dws-wrapper .tab-form .box-input .input:valid ~ label {
+  top: -15px;
+  font-size: 12px;
+  color: #33d3fe;
+}
+.dws-wrapper .tab-form .input {
+  font-size: 16px;
+  border: 2px solid #e9eaea;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  margin-bottom: 22px;
+  color: #1e8da6;
+  outline: none;
+}
+.dws-wrapper .tab-form ::-webkit-input-placeholder {
+  color: #c4c9c9;
+}
+.dws-wrapper .tab-form ::-moz-placeholder {
+  color: #298cad;
+}
+.dws-wrapper .tab-form :-moz-placeholder {
+  color: #298cad;
+}
+.dws-wrapper .tab-form :-ms-input-placeholder {
+  color: #298cad;
+}
+.dws-wrapper .tab-form .button {
+  background-color: #298cad;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  margin: 30px 0 10px 0;
+}
+.dws-wrapper .tab-form .social {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+.dws-wrapper .tab-form .social a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+}
+.dws-wrapper .tab-form .social + a {
+  margin-top: 10px;
+  display: block;
+  font-size: 13px;
+  text-align: center;
+}
+.dws-wrapper .tab-form .recover {
+  display: flex;
+}
+.dws-wrapper .dws-form {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  width: 330px;
+}
+.dws-wrapper .dws-form label.tab {
+  color: #ffffff;
+  font-weight: 600;
+  padding: 15px;
+  display: inline-block;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: -1px;
+  cursor: pointer;
+}
+.dws-wrapper .dws-form .active {
+  background-color: #fff;
+  color: #1d5f75!important;
+}
+.dws-wrapper .dws-form a {
+  text-decoration: none;
+  transition: .5s;
+  color: #298cad;
+}
+.dws-wrapper .dws-form a:hover {
+  color: #36d2ff;
+}
+.dws-wrapper .dws-form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dws-wrapper .dws-form input {
+  display: block;
+  width: 100%;
+}
+.dell {
+  display: none;
+}

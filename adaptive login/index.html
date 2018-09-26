@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Форма авторизации</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div class="dws-wrapper">
+		<div class="dws-form">
+			<label class="tab active" title="Вкладка 1">Авторизация</label>
+			<label class="tab" title="Вкладка 2">Регистрация</label>
+
+			<form class="tab-form active">
+				<div class="box-input">
+					<input class="input" type="text" required>
+					<label>Введите E-mail</label>
+				</div>
+				<div class="box-input">
+					<input class="input" type="password" required>
+					<label>Введите пароль</label>
+				</div>
+				<a href="#" class="button">Войти</a>
+				<ul class="social">
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></i></a></li>
+					<li><a href="#"><i class="fab fa-vk"></i></a></li>
+					<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+				</ul>
+				<a href="#">Я забыл свой Имейл или пароль</a>
+			</form>
+
+			<form class="tab-form dell">
+				<div class="box-input">
+					<input class="input" type="email" required>
+					<label>Введите E-mail</label>
+				</div>
+				<div class="box-input">
+					<input class="input" type="text" required>
+					<label>Введите свое Имя</label>
+				</div>	
+				<div class="box-input">	
+					<input class="input" type="password" required>
+					<label>Введите пароль</label>
+				</div>
+				<a href="#" class="button">Регистрация</a>
+
+				<div class="recover">
+					<input type="checkbox">
+					<label>Ознакомлен(-а) и принимаю <a href="#">условия регистрации</a></label>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>

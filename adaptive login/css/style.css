@@ -66,6 +66,38 @@ body {
   text-align: center;
   padding: 10px 0;
   margin: 30px 0 10px 0;
+  position: relative;
+  z-index: 10;
+  overflow: hidden;
+  border-bottom: 3px solid #36d2ff;
+}
+.dws-wrapper .tab-form .button:hover {
+  color: #ffffff;
+}
+.dws-wrapper .tab-form .button::before,
+.dws-wrapper .tab-form .button::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #27bfdc;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  transition: .3s;
+  z-index: -1;
+}
+.dws-wrapper .tab-form .button::after {
+  background-color: #36d2ff;
+  left: 0;
+  top: 100%;
+  transition: .4s;
+}
+.dws-wrapper .tab-form .button:hover::after {
+  top: 0%;
+}
+.dws-wrapper .tab-form .button:hover::before {
+  left: 0%;
 }
 .dws-wrapper .tab-form .social {
   display: flex;
@@ -86,7 +118,39 @@ body {
   text-align: center;
 }
 .dws-wrapper .tab-form .recover {
-  display: flex;
+  margin-top: 15px;
+  font-size: 14px;
+}
+.dws-wrapper .tab-form .recover #chkbox {
+  display: none;
+}
+.dws-wrapper .tab-form .recover label {
+  cursor: pointer;
+  padding-left: 35px;
+  width: 260px;
+  display: block;
+  position: relative;
+}
+.dws-wrapper .tab-form .recover label::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #c4c9c9;
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  border-radius: 3px;
+  transition: .3s;
+}
+.dws-wrapper .tab-form .recover #chkbox:checked + label::before {
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-bottom: 2px solid #408cc2;
+  border-right: 2px solid #408cc2;
+  transform: rotate(40deg);
+  width: 14px;
+  height: 22px;
+  top: -3px;
 }
 .dws-wrapper .dws-form {
   background-color: rgba(255, 255, 255, 0.2);
@@ -101,6 +165,9 @@ body {
   border-radius: 3px 3px 0 0;
   margin-bottom: -1px;
   cursor: pointer;
+}
+.dws-wrapper .dws-form label.tab::before {
+  content: '\f2f6';
 }
 .dws-wrapper .dws-form .active {
   background-color: #fff;
@@ -122,7 +189,4 @@ body {
 .dws-wrapper .dws-form input {
   display: block;
   width: 100%;
-}
-.dell {
-  display: none;
 }
